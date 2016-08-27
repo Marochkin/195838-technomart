@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 <header class="main-header">
   <div class="container">
 
-  <div class="header-stage3">
+  <div class="header-stage3 clearfix">
     <div class="index-logo">
      <a href="#">
       <img src="img/index-logo.png" width="220" height="42" alt="ТЕХНОМАРТ">
@@ -21,22 +23,24 @@
    </form>
   </div>
 
-  <div class="marker">
-   <a href="#">Закладки: 0</a>
+
+
+  <div class="order">
+   <a href="#">Оформить заказ</a>
   </div>
 
   <div class="basket">
    <a href="#">Корзина: 0</a>
   </div>
 
-  <div class="order">
-    <a href="#">Оформить заказ</a>
+  <div class="marker">
+    <a href="#">Закладки: 0</a>
   </div>
   </div>
 
-  <div class="header-stage2">
+  <div class="header-stage2 clearfix">
     <div class="about-market">
-      <p>Интернет-магазин строительных материалов и инстументов для ремонта</p>
+      <p>Интернет-магазин<br> строительных материалов<br> и инстументов для ремонта</p>
     </div>
 
     <div class="contacts">
@@ -49,20 +53,20 @@
     </div>
 
     <div class="user-block">
-      <div class="enter">
-        <a href="#">Войти</a>
-      </div>
       <div class="registration">
         <a href="#">Регистрация</a>
+      </div>
+      <div class="enter">
+        <a href="#">Войти</a>
       </div>
     </div>
   </div>
 
   <div class="header-stage1">
     <nav class="main-navigation">
-      <ul>
+      <ul class="clearfix">
         <li> <a href="#">Главная</a> </li>
-        <li> <a href="#">Кампания</a> </li>
+        <li> <a href="#">Компания</a> </li>
         <li> <a href="#">Каталог</a> </li>
         <li> <a href="#">Новости</a> </li>
         <li> <a href="#">Спецпредложения</a> </li>
@@ -78,45 +82,50 @@
   <div class="catalog">
     <article class="material catalog-item">
       <p>Материалы</p>
-      <div class="mark-new">
+      <div class="mark-new new1">
         new
+      </div>
+      <div class="img">
+        <img src="img/menu-paint.jpg" alt="ведро">
       </div>
       <div class="blackout">
         <p>На любой вкус</p>
-      </div>
-      <div class="img">
-        <img src="http://placehold.it/140x123" alt="">
       </div>
     </article>
 
     <article class="instrument catalog-item">
       <p>Инструменты</p>
-      <div class="blackout">
-        <p>На все случаи</p>
+      <div class="mark-new new2">
+        new
       </div>
       <div class="img">
-        <img src="http://placehold.it/140x123" alt="">
+        <img src="img/menu-drel.jpg" alt="">
+      </div>
+      <div class="blackout">
+        <p>На все случаи</p>
       </div>
     </article>
 
     <article class="machinery catalog-item">
       <p>Техника</p>
-      <div class="blackout">
-        <p>Для стройки</p>
+      <div class="mark-new new3">
+        new
       </div>
       <div class="img">
-        <img src="http://placehold.it/140x123" alt="">
+        <img src="img/menu-tr.jpg" alt="">
+      </div>
+      <div class="blackout">
+        <p>Для стройки</p>
       </div>
     </article>
 
     <article class="rock-drill">
+
       <header class="blackout-2">
       <h2>Перфораторы</h2>
       <p>Настоящие мужские игрушки</p>
       </header>
-      <div class="img">
-        <img src="http://placehold.it/620x266" alt="фон">
-      </div>
+
       <div class="arrow">
         <img src="http://placehold.it/60x60" alt="назад">
       </div>
@@ -134,27 +143,34 @@
       </div>
 
     </article>
-  </div>
+
 
   <article class="discounts catalog-item">
-    <p>Скидки</p>
-    <div class="blackout">
-      <p>На 350 товаров</p>
+    <p>Скидки 50%</p>
+    <div class="mark-new new5">
+      new
     </div>
     <div class="img">
-      <img src="http://placehold.it/140x123" alt="">
+      <img src="img/menu-basket.jpg" alt="">
+    </div>
+    <div class="blackout">
+      <p>На 350 товаров</p>
     </div>
   </article>
 
   <article class="delivery catalog-item">
     <p>Доставка</p>
+    <div class="mark-new new6">
+      new
+    </div>
+    <div class="img">
+      <img src="img/menu-car.jpg" alt="">
+    </div>
     <div class="blackout">
       <p>Бесплатно</p>
     </div>
-    <div class="img">
-      <img src="http://placehold.it/140x123" alt="">
-    </div>
   </article>
+</div>
 
   <div class="popular-products">
       <header class="popular-header">
