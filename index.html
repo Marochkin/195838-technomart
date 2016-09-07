@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/symbols-technomart.css">
   </head>
   <body>
 <header class="main-header">
-  <div class="container">
+  <div class="container header-all">
 
   <div class="header-stage3 clearfix">
     <div class="index-logo">
      <a href="#">
-      <img src="img/index-logo.png" width="220" height="42" alt="ТЕХНОМАРТ">
+      ТЕХНОМАРТ
      </a>
   </div>
 
   <div class="header-search">
+    <i class="icon-search icon"></i>
    <form action="index.html" method="post">
-    <input type="search" name="search" value="Поиск">
+    <input type="search" name="search" value="Поиск:">
+      <i class="icon-search icon"></i>
+    </input>
    </form>
   </div>
 
@@ -30,10 +35,12 @@
   </div>
 
   <div class="basket">
+    <i class="icon-basket icon"></i>
    <a href="#">Корзина: 0</a>
   </div>
 
   <div class="marker">
+    <i class="icon-bookmark icon"></i>
     <a href="#">Закладки: 0</a>
   </div>
   </div>
@@ -45,6 +52,7 @@
 
     <div class="contacts">
       <div class="phone">
+        <i class="icon-phone"></i>
         +7 (812) 555-05-55
       </div>
       <p>
@@ -57,7 +65,7 @@
         <a href="#">Регистрация</a>
       </div>
       <div class="enter">
-        <a href="#">Войти</a>
+        <a href="#"><i class="icon-login"></i> Войти</a>
       </div>
     </div>
   </div>
@@ -79,7 +87,7 @@
 </header>
 <main class="main">
   <div class="container">
-  <div class="catalog">
+  <div class="catalog clearfix">
     <article class="material catalog-item">
       <p>Материалы</p>
       <div class="mark-new new1">
@@ -88,9 +96,9 @@
       <div class="img">
         <img src="img/menu-paint.jpg" alt="ведро">
       </div>
-      <div class="blackout">
+      <a href="#" class="blackout">
         <p>На любой вкус</p>
-      </div>
+      </a>
     </article>
 
     <article class="instrument catalog-item">
@@ -101,9 +109,9 @@
       <div class="img">
         <img src="img/menu-drel.jpg" alt="">
       </div>
-      <div class="blackout">
+      <a href="#" class="blackout">
         <p>На все случаи</p>
-      </div>
+      </a>
     </article>
 
     <article class="machinery catalog-item">
@@ -114,34 +122,27 @@
       <div class="img">
         <img src="img/menu-tr.jpg" alt="">
       </div>
-      <div class="blackout">
+      <a href="#" class="blackout">
         <p>Для стройки</p>
-      </div>
+      </a>
     </article>
 
     <article class="rock-drill">
-
       <header class="blackout-2">
       <h2>Перфораторы</h2>
       <p>Настоящие мужские игрушки</p>
       </header>
-
-      <div class="arrow">
-        <img src="http://placehold.it/60x60" alt="назад">
+      <div class="arrow arrow-left">
+        <a class="icon-left" href="#" title="HZ"></a>
       </div>
-      <div class="arrow">
-        <img src="http://placehold.it/60x60" alt="вперед">
+      <div class="arrow arrow-right">
+        <a class="icon-left" href="#" title="HZ"></a>
       </div>
-      <div class="item">
+      <div class="drill-btn">
         <a href="#">Открыть каталог</a>
       </div>
-      <div class="dot dot1">
-        <img src="http://placehold.it/10x10" alt="1">
-      </div>
-      <div class="dot dot2">
-        <img src="http://placehold.it/10x10" alt="2">
-      </div>
-
+      <a class="dot1" href="#"></a>
+      <a class="dot2" href="#"></a>
     </article>
 
 
@@ -153,9 +154,9 @@
     <div class="img">
       <img src="img/menu-basket.jpg" alt="">
     </div>
-    <div class="blackout">
+    <a href="#" class="blackout">
       <p>На 350 товаров</p>
-    </div>
+    </a>
   </article>
 
   <article class="delivery catalog-item">
@@ -166,14 +167,14 @@
     <div class="img">
       <img src="img/menu-car.jpg" alt="">
     </div>
-    <div class="blackout">
+    <a href="#" class="blackout">
       <p>Бесплатно</p>
-    </div>
+    </a>
   </article>
 </div>
 
-  <div class="popular-products">
-      <header class="popular-header">
+  <div class="popular-products clearfix">
+      <header class="popular-header clearfix">
         <div class="popular-header-text">
           <h2>Популярные товары:</h2>
         </div>
@@ -183,12 +184,15 @@
       </header>
 
       <article class="product">
+        <div class="mark-new">
+          new
+        </div>
         <div class="product-image">
-          <img src="http://placehold.it/220x160" alt="Перфоратор1" />
+          <img src="img/snippet-32961.jpg" alt="Перфоратор1" />
         </div>
         <div class="product-about">
           <p>
-            Перфоратор BOSH BFG 9000
+            Перфоратор BOSH<br> BFG 9000
           </p>
         </div>
         <div class="product-old-price">
@@ -196,20 +200,21 @@
             32500 P.
           </p>
         </div>
-        <div class="product-new-price">
-          <p>
-            25500 P.
-          </p>
-        </div>
-      </article>
+        <a class="product-new-price" href="#1product">
+            <p>25500 P.</p>
+          </a>
+        </article>
 
       <article class="product">
+        <div class="mark-new">
+          new
+        </div>
         <div class="product-image">
-          <img src="http://placehold.it/220x160" alt="Перфоратор2" />
+          <img src="img/snippet-18927.jpg" alt="Перфоратор2" />
         </div>
         <div class="product-about">
           <p>
-            Перфоратор BOSH BFG 3000
+            Перфоратор BOSH<br> BFG 3000
           </p>
         </div>
         <div class="product-old-price">
@@ -217,20 +222,21 @@
             22500 P.
           </p>
         </div>
-        <div class="product-new-price">
-          <p>
-            15500 P.
-          </p>
-        </div>
+          <a class="product-new-price" href="#1product">
+            <p>15500 P.</p>
+          </a>
       </article>
 
       <article class="product">
+        <div class="mark-new">
+          new
+        </div>
         <div class="product-image">
-          <img src="http://placehold.it/220x160" alt="Перфоратор3" />
+          <img src="img/snippet-945.jpg" alt="Перфоратор3" />
         </div>
         <div class="product-about">
           <p>
-            Перфоратор BOSH BFG 6000
+            Перфоратор BOSH<br> BFG 6000
           </p>
         </div>
         <div class="product-old-price">
@@ -238,39 +244,35 @@
             30500 P.
           </p>
         </div>
-        <div class="product-new-price">
-          <p>
-            25500 P.
-          </p>
-        </div>
+          <a class="product-new-price" href="#1product">
+            <p>25500 P.</p>
+          </a>
       </article>
 
-      <article class="product">
-        <div class="product-image">
-          <img src="http://placehold.it/220x160" alt="Перфоратор4" />
-        </div>
+      <article class="product product-last">
         <div class="mark-new">
           new
         </div>
+        <div class="product-image">
+          <img src="img/snippet-18927.jpg" alt="Перфоратор4" />
+        </div>
         <div class="product-about">
           <p>
-            Перфоратор BOSH BFG 2000
+            Перфоратор BOSH<br> BFG 2000
           </p>
         </div>
         <div class="product-old-price">
-          <p>
-
+          <p style="color: #ffffff;">
+          ______________
           </p>
         </div>
-        <div class="product-new-price">
-          <p>
-            12500 P.
-          </p>
-        </div>
+          <a class="product-new-price" href="#1product">
+            <p>12500 P.</p>
+          </a>
       </article>
   </div>
-  <div class="popular-manufacturer">
-      <header class="popular-header">
+  <div class="popular-manufacturer popular-products">
+      <header class="popular-header clearfix">
         <div class="popular-header-text">
           <h2>Популярные производители:</h2>
         </div>
@@ -278,101 +280,100 @@
           <a href="#">Все популярные производители</a>
         </div>
       </header>
-
+<div class="man clearfix">
       <article class="manufacturer">
         <div class="manufacturer-logo">
-          <img src="http://placehold.it/220x160" alt="BOSH" />
+          <a href="#"><img src="img/bosch.jpg" alt="BOSH" /></a>
+        </div>
+      </article>
+      <article class="manufacturer">
+        <div class="manufacturer-logo">
+          <a href="#"><img src="img/Makita.jpg" alt="Makita" /></a>
+        </div>
+      </article>
+      <article class="manufacturer">
+        <div class="manufacturer-logo">
+          <a href="#"><img src="img/DeWALT.jpg" alt="DeWALT" /></a>
         </div>
       </article>
 
       <article class="manufacturer">
         <div class="manufacturer-logo">
-          <img src="http://placehold.it/220x160" alt="Makita" />
+          <a href="#"><img src="img/Интерскол.jpg" alt="ИНТЕРСКОЛ" /></a>
         </div>
       </article>
 
       <article class="manufacturer">
         <div class="manufacturer-logo">
-          <img src="http://placehold.it/220x160" alt="DeWALT" />
+          <a href="#"><img src="img/Hitachi.jpg" alt="HITACHI" /></a>
         </div>
       </article>
 
       <article class="manufacturer">
         <div class="manufacturer-logo">
-          <img src="http://placehold.it/220x160" alt="ИНТЕРСКОЛ" />
+          <a href="#"><img src="img/LG.jpg" alt="LG" /></a>
         </div>
       </article>
 
       <article class="manufacturer">
         <div class="manufacturer-logo">
-          <img src="http://placehold.it/220x160" alt="HITACHI" />
+          <a href="#"><img src="img/AEG.jpg" alt="AEG" /></a>
         </div>
       </article>
 
       <article class="manufacturer">
         <div class="manufacturer-logo">
-          <img src="http://placehold.it/220x160" alt="LG" />
-        </div>
-      </article>
-
-      <article class="manufacturer">
-        <div class="manufacturer-logo">
-          <img src="http://placehold.it/220x160" alt="AEG" />
-        </div>
-      </article>
-
-      <article class="manufacturer">
-        <div class="manufacturer-logo">
-          <img src="http://placehold.it/220x160" alt="metabo" />
+          <a href="#"><img src="img/Metabo.jpg" alt="metabo" /></a>
         </div>
       </article>
   </div>
-
-<section class="services">
+</div>
+<section class="services clearfix">
   <h3>Сервисы</h3>
   <p>
-Хороший интернет-магазин отличается от плохого не только ценами!
+Хороший интернет-магазин отличается от плохого не только ценами!<br>
 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
   </p>
 
-<div class="service-menu">
-  <ul>
-    <li><a href="#">Доставка</a></li>
+<div class="service-menu-block ">
+  <div class="vertical-shadow">
+    <img src="img/vertical_shadow.png" alt="" />
+  </div>
+  <ul class="service-menu">
+    <li class="active-service-menu"><a href="#">Доставка</a></li>
     <li><a href="#">Гарантия</a></li>
     <li><a href="#">Кредит</a></li>
   </ul>
 </div>
 <div class="service-item">
   <h4>Доставка</h4>
-  <pre>
-Мы с удовольствием ваш товар прямо
-к вашему подъезду совершенно бесплатно!
-Ведь мы неплохо заработаем,
-поднимая его на ваш этаж!
-  </pre>
-</div>
-<div class="service-img">
-  <img src="220x160" alt="" />
+  <p>
+Мы с удовольствием доставим ваш товар прямо<br>
+к вашему подъезду совершенно бесплатно!<br>
+Ведь мы неплохо заработаем,<br>
+поднимая его на ваш этаж!<br>
+  </p>
 </div>
 </section>
-<section class="about-us">
+<section class="about-us clearfix">
   <div class="left-about-us">
-    <h3>Компания <<ТЕХНОМАРТ>></h3>
+    <h3>Компания &#171;ТЕХНОМАРТ&#187;</h3>
     <p>
      Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и <br>
      строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.
     </p>
-    <p>
+    <span>
       Мы можем доставить ваш товар в самые отдаленные точки России!<br>
       Техномарт работает со многими транспортными компаниями:
-    </p>
+    </span>
     <ul>
       <li><a href="#">Деловые линии</a></li>
       <li><a href="#">Автотрейдинг</a></li>
       <li><a href="#">ЖелДорЭкспедиции</a></li>
     </ul>
+    <a href="#" class="btn">Подробнее о компании</a>
   </div>
-  <a href="#" class="btn">Подробнее о компании</a>
+
   <div class="right-about-us">
    <h3>Контакты</h3>
    <p>
@@ -380,7 +381,7 @@
      заехав в наш офис:
    </p>
    <div class="map">
-     <img src="http://placehold.it/300x160" alt="we were here)" />
+     <img src="img/map.jpg" alt="we were here)" />
    </div>
    <a href="#" class="btn poterjashka">Заблудились? Напишите нам!</a>
   </div>
@@ -390,27 +391,24 @@
 
 <footer class="main-footer">
 <div class="container">
-  <div class="footer-2nd-stage">
+  <div class="footer-2nd-stage clearfix">
     <div class="index-logo">
      <a href="#">
-      <img src="img/index-logo.png" width="220" height="42" alt="ТЕХНОМАРТ">
+      ТЕХНОМАРТ
      </a>
-     <p>
-       г.Санкт-Петербург,ул.Б. Конюшенная, д. 19/8
-       +7 (812) 555-05-55
-     </p>
   </div>
+
   <div class="footer-menus">
-<div class="footer-menu-navigation">
+<div class="footer-menu-navigation clearfix">
   <ul>
-    <li> <a href="#">Кампания</a> </li>
+    <li> <a href="#">Компания</a> </li>
     <li> <a href="#">Новости</a> </li>
     <li> <a href="#">Каталог</a> </li>
     <li> <a href="#">Доставка</a> </li>
     <li> <a href="#">Контакты</a> </li>
   </ul>
 </div>
-<div class="footer-menu-catalog">
+<div class="footer-menu-catalog clearfix">
   <ul>
     <li> <a href="#">Материалы</a> </li>
     <li> <a href="#">Техника</a> </li>
@@ -419,33 +417,111 @@
   </ul>
 </div>
 </div>
+<div class="our-cont">
+  <p>
+    г.Санкт-Петербург,ул.Б. Конюшенная, д. 19/8
+    +7 (812) 555-05-55
+  </p>
+</div>
   </div>
-  <div class="footer-1st-stage">
+  <div class="footer-1st-stage clearfix">
     <section class="footer-rights">
      © 2010-2016 Компания «ТЕХНОМАРТ»<br>
      Все права защищены
     </section>
 
     <section class="footer-social">
-     <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-     <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-     <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-    </section>
-
-    <section class="footer-feedback">
-     <p>Обратная связь:</p>
-     <a class="btn" href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
+     <a class="social-btn social-btn-vk" href="#">
+       <i class="icon-vk"></i>
+      </a>
+     <a class="social-btn social-btn-fb" href="#">
+       <i class="icon-facebook"></i>
+      </a>
+     <a class="social-btn social-btn-inst" href="#">
+       <i class=" icon-instagramm"></i>
+      </a>
     </section>
 
     <section class="footer-copyright">
      <p>Разработано-</p>
-     <a class="btn" href="https://htmlacademy.ru">htmlacademy.ru</a>
+     <a class="link" href="https://htmlacademy.ru">htmlacademy.ru</a>
     </section>
+
+
+    <section class="footer-feedback">
+     <p>Обратная связь:</p>
+     <a class="link" href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
+    </section>
+
     </div>
     </footer>
   </div>
 
 </footer>
+
+<!-- ______________popups__________________-->
+<div class="write-us-blank">
+	<button class="write-us-blank-close" type="button" title="Закрыть">Закрыть
+	</button>
+	<form method="post" action=""https://echo.htmlacademy.ru">
+	<div class="blank-container">
+		<div class="blank-left">
+			<label for="blank-name"><p>Ваше имя:</p></label>
+			<input class="blank blank-name" type="text" name="name" id="blank-name" placeholder="Представтесь, пожалуйста">
+		</div>
+
+		<div class="blank-right">
+			<label for="blank-mail"><p>Ваш e-mail:</p></label>
+			<input class="blank blank-mail" type="text" name="email" id="blank-mail" placeholder="Для отправки ответа">
+		</div>
+		<div>
+			<label for="blank-text"><p>Текст письма:</p></label>
+			<textarea class="blank-text" id="blank-text" placeholder="В свободной форме">
+			</textarea>
+		</div>
+	</div>
+	<div class="blank-gray">
+		<input class="blank-submit" type="submit">
+	</div>
+	</form>
+</div>
+<div class="big-map">
+	<button class="big-map-close" type="button" title="Закрыть">Закрыть
+	</button>
+	<div class="img-map">
+	</div>
+</div>
+
+
+<script>
+	var link = document.querySelector(".poterjashka");
+	var popup = document.querySelector(".write-us-blank");
+	var close = popup.querySelector(".write-us-blank-close");
+	var linkmap = document.querySelector(".map");
+	var popup2 = document.querySelector(".big-map");
+	var close2 = popup2.querySelector(".big-map-close");
+
+	link.addEventListener("click", function(event) {
+		event.preventDefault();
+	popup.classList.add("write-us-blank-show");
+	});
+
+	close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("write-us-blank-show");
+	});
+
+	linkmap.addEventListener("click", function(event) {
+		event.preventDefault();
+	popup2.classList.add("big-map-show");
+	});
+
+	close2.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup2.classList.remove("big-map-show");
+	});
+
+</script>
 
   </body>
 </html>
