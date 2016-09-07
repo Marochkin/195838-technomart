@@ -26,8 +26,6 @@
    </form>
   </div>
 
-
-
   <div class="order">
    <a href="#">Оформить заказ</a>
   </div>
@@ -187,7 +185,7 @@
 	          		</div>
                 <div class="product-action">
                     <div class="by-btn">
-                    <a href="#" class="product-by-btn">Купить</a>
+                    <a href="#" class="product-by-btn1">Купить</a>
                     </div>
                     <div class="mark-btn">
                     <a href="#" class="product-mark-btn">В закладки</a>
@@ -209,7 +207,7 @@
 		           	</div>
                 <div class="product-action">
 		                <div class="by-btn">
-		                <a href="#" class="product-by-btn">Купить</a>
+		                <a href="#" class="product-by-btn2">Купить</a>
 		                </div>
 		                <div class="mark-btn">
 		                <a href="#" class="product-mark-btn">В закладки</a>
@@ -234,7 +232,7 @@
 	           		</div>
                 <div class="product-action">
 		                <div class="by-btn">
-		                <a href="#" class="product-by-btn">Купить</a>
+		                <a href="#" class="product-by-btn3">Купить</a>
 		                </div>
 		                <div class="mark-btn">
 		                <a href="#" class="product-mark-btn">В закладки</a>
@@ -260,7 +258,7 @@
 		            </div>
 		            <div class="product-action">
 		                <div class="by-btn">
-		                <a href="#" class="product-by-btn">Купить</a>
+		                <a href="#" class="product-by-btn4">Купить</a>
 		                </div>
 		                <div class="mark-btn">
 		                <a href="#" class="product-mark-btn">В закладки</a>
@@ -285,7 +283,7 @@
 		           </div>
                <div class="product-action">
                    <div class="by-btn">
-                   <a href="#" class="product-by-btn">Купить</a>
+                   <a href="#" class="product-by-btn5">Купить</a>
                    </div>
                    <div class="mark-btn">
                    <a href="#" class="product-mark-btn">В закладки</a>
@@ -311,7 +309,7 @@
 		           </div>
                <div class="product-action">
                    <div class="by-btn">
-                   <a href="#" class="product-by-btn">Купить</a>
+                   <a href="#" class="product-by-btn6">Купить</a>
                    </div>
                    <div class="mark-btn">
                    <a href="#" class="product-mark-btn">В закладки</a>
@@ -340,7 +338,7 @@
 		           </div>
                <div class="product-action">
                    <div class="by-btn">
-                   <a href="#" class="product-by-btn">Купить</a>
+                   <a href="#" class="product-by-btn7">Купить</a>
                    </div>
                    <div class="mark-btn">
                    <a href="#" class="product-mark-btn">В закладки</a>
@@ -366,7 +364,7 @@
 		           </div>
                <div class="product-action">
                    <div class="by-btn">
-                   <a href="#" class="product-by-btn">Купить</a>
+                   <a href="#" class="product-by-btn8">Купить</a>
                    </div>
                    <div class="mark-btn">
                    <a href="#" class="product-mark-btn">В закладки</a>
@@ -392,7 +390,7 @@
 		            </div>
                 <div class="product-action">
 		                <div class="by-btn">
-		                <a href="#" class="product-by-btn">Купить</a>
+		                <a href="#" class="product-by-btn9">Купить</a>
 		                </div>
 		                <div class="mark-btn">
 		                <a href="#" class="product-mark-btn">В закладки</a>
@@ -497,7 +495,6 @@
   </div>
 
 </footer>
-<!--- ------------------ Ann------------------- -->
 
 <div class="cart-block">
 	<button class="write-us-blank-close" type="button" title="Закрыть">Закрыть
@@ -514,7 +511,125 @@
 		</div>
 	</div>
 </div>
+<script>
+	var cartlink1 = document.querySelector(".product-by-btn1");
+	var cartpopup1 = document.querySelector(".cart-block");
+	var cartclose1 = cartpopup1.querySelector(".write-us-blank-close");
 
+  var cartlink2 = document.querySelector(".product-by-btn2");
+	var cartpopup2 = document.querySelector(".cart-block");
+	var cartclose2 = cartpopup2.querySelector(".write-us-blank-close");
+
+  var cartlink3 = document.querySelector(".product-by-btn3");
+  var cartpopup3 = document.querySelector(".cart-block");
+  var cartclose3 = cartpopup3.querySelector(".write-us-blank-close");
+
+  var cartlink4 = document.querySelector(".product-by-btn4");
+  var cartpopup4 = document.querySelector(".cart-block");
+  var cartclose4 = cartpopup4.querySelector(".write-us-blank-close");
+
+  var cartlink5 = document.querySelector(".product-by-btn5");
+  var cartpopup5 = document.querySelector(".cart-block");
+  var cartclose5 = cartpopup5.querySelector(".write-us-blank-close");
+
+  var cartlink6 = document.querySelector(".product-by-btn6");
+  var cartpopup6 = document.querySelector(".cart-block");
+  var cartclose6 = cartpopup6.querySelector(".write-us-blank-close");
+
+  var cartlink7 = document.querySelector(".product-by-btn7");
+  var cartpopup7 = document.querySelector(".cart-block");
+  var cartclose7 = cartpopup7.querySelector(".write-us-blank-close");
+
+  var cartlink8 = document.querySelector(".product-by-btn8");
+  var cartpopup8 = document.querySelector(".cart-block");
+  var cartclose8 = cartpopup8.querySelector(".write-us-blank-close");
+
+  var cartlink9 = document.querySelector(".product-by-btn9");
+  var cartpopup9 = document.querySelector(".cart-block");
+  var cartclose9 = cartpopup9.querySelector(".write-us-blank-close");
+
+	cartlink1.addEventListener("click", function(event) {
+		event.preventDefault();
+	cartpopup1.classList.add("cart-block-show");
+	});
+
+	cartclose1.addEventListener("click", function(event) {
+        event.preventDefault();
+        cartpopup1.classList.remove("cart-block-show");
+	});
+
+  cartlink2.addEventListener("click", function(event) {
+    event.preventDefault();
+  cartpopup2.classList.add("cart-block-show");
+  });
+  cartclose2.addEventListener("click", function(event) {
+        event.preventDefault();
+        cartpopup2.classList.remove("cart-block-show");
+  });
+
+  cartlink3.addEventListener("click", function(event) {
+    event.preventDefault();
+  cartpopup3.classList.add("cart-block-show");
+  });
+  cartclose3.addEventListener("click", function(event) {
+        event.preventDefault();
+        cartpopup3.classList.remove("cart-block-show");
+  });
+
+  cartlink4.addEventListener("click", function(event) {
+    event.preventDefault();
+  cartpopup4.classList.add("cart-block-show");
+  });
+  cartclose4.addEventListener("click", function(event) {
+        event.preventDefault();
+        cartpopup4.classList.remove("cart-block-show");
+  });
+
+  cartlink5.addEventListener("click", function(event) {
+    event.preventDefault();
+  cartpopup5.classList.add("cart-block-show");
+  });
+  cartclose5.addEventListener("click", function(event) {
+        event.preventDefault();
+        cartpopup5.classList.remove("cart-block-show");
+  });
+
+  cartlink6.addEventListener("click", function(event) {
+    event.preventDefault();
+  cartpopup6.classList.add("cart-block-show");
+  });
+  cartclose6.addEventListener("click", function(event) {
+        event.preventDefault();
+        cartpopup6.classList.remove("cart-block-show");
+  });
+
+  cartlink7.addEventListener("click", function(event) {
+    event.preventDefault();
+  cartpopup7.classList.add("cart-block-show");
+  });
+  cartclose7.addEventListener("click", function(event) {
+        event.preventDefault();
+        cartpopup7.classList.remove("cart-block-show");
+  });
+
+  cartlink8.addEventListener("click", function(event) {
+    event.preventDefault();
+  cartpopup8.classList.add("cart-block-show");
+  });
+  cartclose8.addEventListener("click", function(event) {
+        event.preventDefault();
+        cartpopup8.classList.remove("cart-block-show");
+  });
+
+  cartlink9.addEventListener("click", function(event) {
+    event.preventDefault();
+  cartpopup9.classList.add("cart-block-show");
+  });
+  cartclose9.addEventListener("click", function(event) {
+        event.preventDefault();
+        cartpopup9.classList.remove("cart-block-show");
+  });
+</script>
 
   </body>
 </html>

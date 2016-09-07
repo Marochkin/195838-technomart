@@ -7,9 +7,6 @@ font-size: 13px;
 font-family: "Cuprum", "PT Sans", "Arial"
 }
 body{
-
-  /*background: url("technomart-index-opacity.jpg") no-repeat 50% 0px;*/
-  /*background: url("fon-catalog.jpg") no-repeat 50% 0px;*/
   background-size: 1200px;
   margin: 0;
 }
@@ -425,15 +422,6 @@ position:relative;
   right: -21px;
 
 }
-
-/*.new1,
-.new2,
-.new3,
-.new5,
-.new6 {
-  display: none;
-}*/
-
 .blackout {
   display: inline-block;
   float: left;
@@ -475,9 +463,6 @@ margin-top: 8px;
   position:relative;
 }
 .rock-drill h2 {
-/*  margin: 0;
-  margin-top: 28px;
-  margin-left: 24px;*/
   font-size: 36px;
   text-transform: uppercase;
   margin: 28px 0 8px 24px;
@@ -490,14 +475,6 @@ margin-top: 8px;
 .arrow {
   display: inline-block;
 }
-/*
-.arrow-left {
-  display: inline-block;
-  float: left;
-  vertical-align: top;
-  box-shadow: 0 0 1px blue;
-}
-*/
 .arrow-left a{
 display:inline-block;
 color:white;
@@ -520,7 +497,6 @@ top:110px;
 transform: rotateY(15deg);
 transform: rotateZ(180deg);
 }
-
 .rock-drill .drill-btn a{
   display:inline-block;
   min-width: 195px;
@@ -896,6 +872,7 @@ margin-bottom: 32px;
   text-align: left;
   width: 350px;
   margin-top: 25px;
+  color: white;
 }
 
 .footer-menu-navigation,
@@ -918,9 +895,14 @@ margin-bottom: 32px;
   float: left;
   text-decoration: none;
 }
-.footer-menu-navigation li:hover,
-.footer-menu-catalog li:hover {
+.footer-menu-navigation li a:hover,
+.footer-menu-catalog li a:hover {
   text-decoration: underline;
+}
+.footer-menu-navigation li a:active,
+.footer-menu-catalog li a:active {
+  text-decoration: none;
+  opacity: 0.5;
 }
 .footer-menus li a {
   display: inline-block;
@@ -947,6 +929,9 @@ padding-bottom: 20px;
   display: inline-block;
   float: left;
 }
+.footer-rights {
+  color: white;
+}
 .footer-feedback,
 .footer-copyright {
   float: right;
@@ -956,11 +941,21 @@ padding-bottom: 20px;
 .footer-copyright a {
 color: #ffd180;
 }
+.footer-feedback a:hover,
+.footer-copyright a:hover {
+  text-decoration: underline;
+}
+.footer-feedback a:active,
+.footer-copyright a:active {
+  text-decoration: none;
+  color: #ee3643;
+}
 .footer-feedback p,
 .footer-copyright p {
   padding: 0;
   margin: 0;
   margin-right: 21px;
+  color: white;
 }
 .footer-feedback p {
   margin-right: 85px;
@@ -974,6 +969,9 @@ color: #ffd180;
   height: 42px;
   border-radius: 21px;
   background-color: #212a3a;
+}
+.social-btn:hover {
+  background-color: #ee3643;
 }
 .footer-social i {
   font-family: "symbols-technomart";
@@ -1433,7 +1431,6 @@ a.sort-active {
   color: #c1c6ce;
 }
 
-/*______________popups__________________*/
 .write-us-blank{
   position: absolute;
   top: 2519px;
@@ -1594,6 +1591,9 @@ a.sort-active {
   margin-top: 63px;
   margin-left: 180px;
   margin-bottom: 81px;
+}
+.cart-block-show{
+  display:block;
 }
 .cart-block::before{
   content: "";
